@@ -4,4 +4,4 @@ def islower(c):
     while(i < 123):
         if(ord(c) == i):
             return True
-        i+=1
+        i += 1
