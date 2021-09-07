@@ -6,6 +6,7 @@ def islower(c):
             return True
         i += 1
 
+
 def uppercase(str):
     for j in str:
         if(islower(j)):
