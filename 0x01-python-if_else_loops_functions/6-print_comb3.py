@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-for i in range(0, 100):
-    if( i // 10 == i % 10):
-        pass
-    if(
-        print("{}{}".format(i // 10, i % 10), end=", ")
-    elif i == 99:
-        print(i)
+for a in range(10):
+    for b in range(a, 10):
+        if a != b and (a != 8 or b != 9):
+            print("{}{}, ".format(a, b), end="")
+        elif a == 8 and b == 9:
+            print("{}{}".format(a, b))
