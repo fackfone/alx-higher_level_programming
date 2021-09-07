@@ -11,5 +11,5 @@ def uppercase(str):
     for j in str:
         if(islower(j)):
             j = chr(ord(j) - 32)
-        print("{}".format(j),end="")
+        print("{}".format(j), end="")
     print("")
