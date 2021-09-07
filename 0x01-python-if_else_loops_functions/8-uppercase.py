@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 def islower(c):
+    i = 97
     while(i < 123):
-        i = 97
         if(ord(c) == i):
             return True
-        i++
+        i += 1
 
+def uppercase(str):
+    for j in str:
+        if(islower(j)):
+            j = chr(ord(j) - 32)
+        print(j, end="")
+    print("")
