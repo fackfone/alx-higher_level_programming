@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import sys
-length = len(sys.argv) - 1
 if (__name__ == "__main__"):
+    import sys
+    length = len(sys.argv) - 1
     print("{} {}{}".format(length,
           "argument" if(length == 1) else "arguments",
           "." if (length == 0) else ":"))
