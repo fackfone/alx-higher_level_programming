@@ -4,7 +4,7 @@ def main(argv):
     length = len(argv) - 1
     if length != 3:
         print("Usage: {:s}"
-                "<a> <operator> <b>".format(argv[0]))
+              "<a> <operator> <b>".format(argv[0]))
         exit(1)
     op = argv[2]
     if (op not in '+*/-'):
