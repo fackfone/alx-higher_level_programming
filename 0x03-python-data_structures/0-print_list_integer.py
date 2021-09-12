@@ -2,5 +2,5 @@
 def print_list_integer(my_list=[]):
     if list == []:
         return None
-    for integer in my_list:
-        print("{}".format(integer))
+    for integer in range(len(my_list)):
+        print("{}".format(my_list[integer]))
