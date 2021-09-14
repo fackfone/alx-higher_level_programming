@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     k = 0
     while (k < len(matrix)):
