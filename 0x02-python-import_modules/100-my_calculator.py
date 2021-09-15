@@ -4,18 +4,15 @@ def main(argv):
     length = len(argv) - 1
     if length != 3:
         print("Usage: {:s}"
-              "<a> <operator> <b>".format(argv[0]))
+              " <a> <operator> <b>".format(argv[0]))
         exit(1)
     op = argv[2]
     if (op not in '+*/-'):
-        print("{}".format("Unknown operator."
+        print("{:s}".format("Unknown operator."
               "Available operators: +, -, * and /"))
         exit(1)
     a, b = int(argv[1]), int(argv[3])
-    if op == '*':
-        print("{:d} {:s} {:d} = {:d}".format(a, op, b, mul(a, b)))
-    else:
-        print("{:d} {:s} {:d} = {:d}".format(a, op, b, operation[op](a, b)))
+    print("{:d} {:s} {:d} = {:d}".format(a, op, b, operation[op](a, b)))
 
 if __name__ == "__main__":
     from sys import argv, exit
