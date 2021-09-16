@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-def best_score(a_dictionary):
-    if a_dictionary is None:
-        return None
-    max_score = 0
-    for key in a_dictionary:
-        if max_score < a_dictionary[key]:
-            max_score = a_dictionary[key]
-            favourite = key
-    return favourite
+def roman_to_int(roman_string):
+    dic = {"I": 1, "V": 5, "X": 10, "L": 50,
+           "C": 100, "D": 500, "M": 1000}
+    sum = 0
+    if roman_string is None:
+        return 0
+    if type(roman_string) != str:
+        return 0
+    roman_list = list(roman_string)
+    for key in roman_list:
+        if key in dic:
+            sum += dic[key]
+        else:
+            return 0
+    return sum
