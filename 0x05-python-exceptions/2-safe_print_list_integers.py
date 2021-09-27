@@ -7,8 +7,8 @@ def safe_print_list_integers(my_list=[], x=0):
         if x > length:
             raise IndexError()
         for i in range(x):
-                print(my_list[], end="")
+            print(my_list[], end="")
         print("")
-        return x 
+        return x
     except IndexError:
         print("Error Occured")
