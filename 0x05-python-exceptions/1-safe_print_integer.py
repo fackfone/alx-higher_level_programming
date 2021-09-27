@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
     try:
-        if value is not str:
+        if value is int:
             print("{:d}".format(value))
         return True
-    except ValueError or TypeError:
+    except (ValueError,TypeError):
         return False
     else:
         return False
