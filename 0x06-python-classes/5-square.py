@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""Defines a Square class that defines a square
+object with private attributes, handle getter and
+setter, and exceptions (ValueError and TypeError).
+Prints in stdout the square with the character #"""
+
+
 class Square:
     """A class that defines a square with size instance"""
     def __init__(self, size=0):

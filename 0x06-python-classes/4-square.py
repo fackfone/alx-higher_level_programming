@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""Definition of a Square class which defines a
+square object with attributes and also allows
+to handle getter and setter functions pythonically"""
+
+
 class Square:
     """A class that defines a square with size instance"""
 

@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""Definition of a class Square which defines a
+square object with attributors and raises
+ValueError and TypeError when they occured"""
+
+
 class Square:
     """A class that defines a square with size instance"""
     def __init__(self, size=0):
