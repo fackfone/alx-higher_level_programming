@@ -7,7 +7,12 @@ to handle getter and setter functions pythonically"""
 class Square:
     """A class that defines a square with size instance"""
     def __init__(self, size=0):
-        self.__size = size
+        if type(size) != int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
 
     @property
     def size(self):
@@ -15,15 +20,12 @@ class Square:
 
     @size.setter
     def size(self, value):
-        self.__size = value
-        try:
-            if self.__size < 0:
-                raise ValueError("size must be >= 0")
-        except TypeError:
-            pass
+        if type(value) != int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
 
     def area(self):
-        if type(self.__size) is int:
-            return (self.__size * self.__size)
-        else:
-            raise TypeError("size must be an integer")
+        return (self.__size * self.__size)
