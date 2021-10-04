@@ -33,8 +33,8 @@ class Rectangle:
         return s2
 
     def __del__(self):
-        s3 = "Bye my rectangle"
-        return s3
+        s3 = "Bye my rectangle..."
+        print(s3)
 
     @property
     def width(self):
