@@ -18,12 +18,13 @@ class Rectangle:
         self.__height = height
 
     def __str__(self):
-        s = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                s += "#"
-            if i != (self.__height - 1):
-                s += '\n'
+        s = " "
+        if self.__height == 0 or self.__width == 0:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    s += "#"
+                if i != (self.__height - 1):
+                    s += '\n'
         return s
 
     @property
