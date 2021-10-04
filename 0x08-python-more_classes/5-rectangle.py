@@ -32,6 +32,10 @@ class Rectangle:
         s2 = "Rectangle(" + str(self.__width) + ", " + str(self.__height)+")"
         return s2
 
+    def __del__(self):
+        s3 = "Bye my rectangle"
+        return s3
+
     @property
     def width(self):
         return self.__width
@@ -65,6 +69,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
-
-    def __del__(self):
-        print("Bye my rectangle...")
