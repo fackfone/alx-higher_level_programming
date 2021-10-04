@@ -19,6 +19,8 @@ class Rectangle:
 
     def __str__(self):
         s = ""
+        if self.__width == 0 or self.__height == 0:
+            return s
         for i in range(self.__height):
             for j in range(self.__width):
                 s += "#"
@@ -36,14 +38,15 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
-            p²=p²p²ss²
+        else:
+            self.__width = value
+
     @property
     def height(self):
-        self.__height = height
         return self.__height
 
     @height.setter
@@ -58,4 +61,6 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return 2 * (self.__width + self.__height)
