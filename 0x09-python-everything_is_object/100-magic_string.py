@@ -1,8 +1,4 @@
 #!/usr/bin/python3
 def magic_string():
-    s1, s2 = "Best School","Best School"
-    if (s2 == s1): 
-        return s1
-    s1 = s1 + "," + s2
-    return (s1 + ", " + s2)
-
+    magic_string.n = getattr(magic_string, 'n', 0) + 1
+    return ("Holberton, " * (magic_string.n - 1) + "Holberton")
