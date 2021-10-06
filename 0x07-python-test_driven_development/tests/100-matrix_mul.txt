@@ -1,0 +1,49 @@
+	>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+	>>> r = matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+	>>> print(r)
+	[[13, 16]]
+
+	>>> r = matrix_mul([[1, 2]], [[3, 4]]) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	ValueError: m_a and m_b can't be multiplied
+
+	>>> r = matrix_mul([['1', 2]], [[3, 4], [5, 6]]) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: m_a should contain only integers or floats
+
+	>>> r = matrix_mul([[]], [[], []]) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	ValueError: m_a can't be empty
+
+	>>> r = matrix_mul(2, 5) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: m_a must be a list
+
+	>>> r = matrix_mul(None, None) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: m_a must be a list
+
+	>>> r = matrix_mul() # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: ...
+
+	>>> r = matrix_mul([[1, 2]], [[3, 4], [5, 6, 7]]) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: each row of m_b must be of the same size
+
+	>>> r = matrix_mul([1, 2, 3, 4], [1, 2, 3, 4]) # doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: m_a must be a list of lists
+
+	>>> r = matrix_mul([[1.2, 2.44587]], [[1.1, 2.333], [2.5, 5.4]])
+	>>> print(r) # doctest: +ELLIPSIS
+	[[..., ...]]
