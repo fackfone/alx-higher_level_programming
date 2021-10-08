@@ -8,7 +8,12 @@ stdout
 
 def add_integer(a, b=98):
     """
-    Computes the sum of two integers
+    This function does the addition of 2 arguments
+    args:
+        a (union[int, float]): first number
+        b (union[int, float], optional): second number
+    returns:
+        the result of the addition
     """
     if a is None:
         raise TypeError("a must be an integer")
