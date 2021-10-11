@@ -1,9 +1,14 @@
 Start Testing....
 
->> bg = __import__('7-base_geometry').BaseGeometry
+Using ``integer_validator``
+----------------------
 
+Importing the class ``BaseGeometry`` from the module ``7-base_geometry``
+
+	>>> bg = __import__('7-base_geometry').BaseGeometry
+
+Now Testing:
 Testing Normal Value
->> Now Testing:
 
 ***********************************************
 	Test_case 1: value = integer
