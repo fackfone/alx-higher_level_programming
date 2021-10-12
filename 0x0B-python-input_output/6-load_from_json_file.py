@@ -11,6 +11,5 @@ def load_from_json_file(filename):
     This function creates an Object from a JSON file
     """
     with open(filename, 'r+') as file:
-        # decoded = json.JSONDecoder().decode(file.read()) also works
-        decoded = json.loads(file.read())
+        decoded = json.JSONDecoder().decode(file.read())
         return decoded
