@@ -279,3 +279,5 @@ class Base:
         t.right(90)
         t.penup()
         t.fd(big_w)
+
+    # ***************** End of Class Methods *****************
