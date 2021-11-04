@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if (($# == 0))  
+then
+	echo "$0 {IP_ADDRESS}";
+else
+ping -c 5 $1
+fi
